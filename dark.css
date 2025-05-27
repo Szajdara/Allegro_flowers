@@ -1,7 +1,6 @@
 * {
   margin: 0 auto;
   font-family: 'Roboto' !important;
-  /* box-sizing: border-box; */
 }
 
 :root {
@@ -55,22 +54,9 @@ header {
   background-color: var(--header-color);
   min-height: 90px;
   display: flex;
-  /* align-items: baseline;
-  gap: 1px;
-  align-items: center;
-  justify-content: center; */
   border-bottom: solid 1px;
   flex-wrap: wrap;
 }
-
-/* menu {
-  background-color: var(--menu-color);
-  min-height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-} */
 menu {
   background-color: var(--menu-color);
   min-height: 70px;
@@ -78,42 +64,16 @@ menu {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px; /* Odstępy między przyciskami */
+  gap: 10px; 
   padding: 10px;
   flex-grow: 1; 
 }
-
-/* knopoczki */
-/* .button {
-  display: inline-block;
-padding: 12px 24px;
-  border: 1px solid #4f4f4f;  
-  border: none;
-  border-radius: 4px;
-  transition: all 0.2s ease-in;
-  position: relative;
-  overflow: hidden;
-  font-size: 13px;
-  cursor: pointer;
-  color: black;
-  z-index: 1;
-}
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 24px;
-  min-width: 120px; Minimalna szerokość
-  flex-grow: 1; Przyciski będą się dostosowywać
-  text-align: center;
-} */
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
   min-width: 110px;
-  /* max-width: max-content; */
   flex-grow: 1;
   text-align: center;
   font-size: 13px;
@@ -174,7 +134,6 @@ padding: 12px 24px;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
-/* End of cssbuttons-io */
 .smart {
   background-color: var(--smart-color);
   border: none;
@@ -191,11 +150,9 @@ padding: 12px 24px;
   align-items: center;
   position: relative;
   bottom: 0.4em;
-  /* position: left; */
   margin: 0;
   font-size: 50px;
   font-family: 'Dancing Script' !important;
-  /* margin-top: -7px; */
   font-weight: bold;
   padding: 0;
   color: #ff5a00;
@@ -203,7 +160,6 @@ padding: 12px 24px;
 
 /* czego szukasz */
 .input-style {
-  /* padding: 2%; */
   border: 2px solid #ccc;
   border-radius: 2px;
   font-size: 16px;
@@ -212,8 +168,6 @@ padding: 12px 24px;
   height: 40px;
   justify-content: center;
   align-self: center;
-  /* position: relative;
-  top: 2vw; */
   width: 400px;
 } 
 
@@ -228,8 +182,6 @@ padding: 12px 24px;
   margin: 0;
   width: 100px;
   height: 45px;
-  /* position: relative;
-  top: 1.9vw; */
   align-self: center;
   border-radius: 2px;
   border: 0.3px;
@@ -291,8 +243,6 @@ padding: 12px 24px;
   color: var(--text-color);
   display: flex;
   justify-content: left;
-  /* font-weight: bold;
-    letter-spacing: 1px; */
 }
 
 .card .price {
@@ -375,7 +325,6 @@ padding: 12px 24px;
 
 .themeToggle {
   color: #bbb;
-  /* width: 3em; */
 }
 
 .st-sunMoonThemeToggleBtn {
@@ -396,11 +345,6 @@ padding: 12px 24px;
   padding: 0;
   transition: transform 0.4s ease;
   transform: rotate(40deg);
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 12px;
-  margin-right: 5x; */
 }
 
 .st-sunMoonThemeToggleBtn svg .sunMoon {
@@ -468,7 +412,6 @@ padding: 12px 24px;
 .buttons_icons {
   display: flex;
   justify-content: space-around;
-  /* lub space-around */
   align-items: center;
   gap: 2.5%;
 }
@@ -481,7 +424,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 3px; /* Dodajemy odstęp między przyciskami */
+  gap: 3px;
   padding: 10px;
 }
 .koroboczki {
@@ -494,24 +437,23 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: var(--koroboczka-color);
-  width: auto; /* Zmieniamy szerokość na auto */
-  height: auto; /* Zapewnia dopasowanie do zawartości */
+  width: auto;
+  height: auto;
   margin: 10px;
   padding: 2%;
-  align-items: center; /* Centruje zawartość */
+  align-items: center;
   padding: 10px 70px 10px 70px;
-  max-width: 1000px; /* Stała szerokość maksymalna */
+  max-width: 1000px;
 }
 
 .koroboczka_pobolsze img {
-  width: 100%; /* Dostosowanie szerokości do kontenera */
-  max-width: 70%; /* Ograniczenie maksymalnej szerokości */
-  height: auto; /* Zapewnia proporcjonalne skalowanie */
+  width: 100%; 
+  max-width: 70%;
+  height: auto;
 }
 
 .koroboczka_pomensze {
   width: auto;
-  /* max-width: 30%; */
   margin: 10px;
   height: max-content;
   background-color: var(--koroboczka-color);
@@ -637,9 +579,6 @@ footer {
   width: 30%;
   height: 220px;
   margin: 10px;
-  /* margin-right: 20px; */
-  /* margin-bottom: 20px; */
-  /* float: right; */
 }
 
 .koroboczka_pobolsze1 {
@@ -721,9 +660,7 @@ table {
   height: max-content;
   background-color: var(--koroboczka-color);
   min-width: 35%;
-  /* padding: 1vw; */
   margin: 10px;
-  /* padding-bottom: 2vw; */
 }
 
 .dane_odbiorcy {
@@ -976,4 +913,15 @@ input[type="submit"]:hover {
     width: 100%;
   }
 }
-
+.ogród{
+   background-image: url("images/ogród.webp");
+   height: 200px;
+   background-repeat: no-repeat;
+    background-position: center;
+}
+.ur{
+   background-image: url("images/urodz.png");
+   height: 200px;
+   background-repeat: no-repeat;
+    background-position: center; 
+}

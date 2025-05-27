@@ -21,10 +21,11 @@ $results = $db->query($query);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Allegro Flowers - Twoje ulubione kwiaty w jednym miejscu. Kupuj wygodnie i szybko.">
+    <meta name="keywords" content="Allegro, Flowers, Kwiaty, Zakupy, Online, E-commerce">
     <title>Allegro Flowers</title>
     <link rel="icon" type="image/x-icon" href="images/a log.svg">
     <link rel="stylesheet" href="dark.css">
-    <script src="heroina.js"></script>
+    <script src="javascript.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -89,6 +90,8 @@ $results = $db->query($query);
         popularnych kategorii.<br> Jak coś się zaczyna, to zakupy na Allegro.<br>
         <button class="button" onclick="document.location='zarejestrój.php'">Zarejestruj się</button></section>
         <div class="odstep"></div>
+        <article class="ur"></article>
+        <div class="odstep"></div>
         <section class="boxes">
     <?php foreach ($results as $row): ?>
         <div class="box">
@@ -118,8 +121,10 @@ $results = $db->query($query);
     <?php endforeach; ?>
 </section>
 
-<article>
-    
+<div class="odstep"></div>
+
+<article class="ogród">
+    <h1 style="padding: 20px; color: #ffffff;">Ogrodowe rewolucje</h1>
 </article>
 
 
